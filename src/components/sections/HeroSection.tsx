@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* Left Profile Card */}
         <div className="bg-secondary/10 rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center">
           <div className="w-3/4 overflow-hidden bg-gray-300 mb-8 shadow-xl">
-            <img src="prof.jpeg"/>
+            <img src="/src/assets/prof.jpeg"/>
           </div>
           
           <div className="w-16 h-1 bg-primary mb-8"></div>
