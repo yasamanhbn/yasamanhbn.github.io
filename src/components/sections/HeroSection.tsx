@@ -1,5 +1,5 @@
-import { Mail, Github, Linkedin, GraduationCap } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Github, Linkedin, GraduationCap } from "lucide-react";
+import profileImg from "@/assets/prof.jpeg";
 
 const HeroSection = () => {
   const socialLinks = [
@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* Left Profile Card */}
         <div className="bg-secondary/10 rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center">
           <div className="w-3/4 overflow-hidden bg-gray-300 mb-8 shadow-xl">
-            <img src="/src/assets/prof.jpeg"/>
+            <img src={profileImg}/>
           </div>
           
           <div className="w-16 h-1 bg-primary mb-8"></div>

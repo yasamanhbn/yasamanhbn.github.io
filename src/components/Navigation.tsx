@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/Y.png";
 
 const navItems = [
   { label: "About", href: "#hero" },
@@ -31,7 +32,7 @@ const Navigation = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("#hero"); }}
             className="font-display text-xl font-bold text-primary"
           >
-            <img src="/src/assets/Y.png" className="w-20"/>
+            <img src={logo} className="w-20"/>
           </a>
           
           {/* Desktop Navigation */}
