@@ -31,7 +31,7 @@ const Navigation = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("#hero"); }}
             className="font-display text-xl font-bold text-primary"
           >
-            YH
+            <img src="public/Y.png" className="w-20"/>
           </a>
           
           {/* Desktop Navigation */}

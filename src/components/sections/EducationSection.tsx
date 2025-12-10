@@ -14,7 +14,7 @@ const education = [
     subtitle: "Tehran Polytechnic",
     degree: "B.Sc., Computer Engineering",
     period: "2018–2022",
-    gpa: "19.08/20 (4.00/4.00)",
+    gpa: "19.06/20 (4.00/4.00)",
     project: "Driver drowsiness detection using convolutional neural networks",
     supervisors: "Prof. Mohammad Rahmati",
   },
