@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-12 px-4 bg-foreground text-background">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="font-display text-2xl font-bold mb-4">Yasaman Haghbin</h3>
-        <p className="text-background/70 mb-6">AI Researcher</p>
+        <p className="text-background/70 mb-6">PhD Researcher</p>
         
         <div className="flex justify-center gap-6 mb-8">
           <a 

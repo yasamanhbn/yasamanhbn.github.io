@@ -7,16 +7,6 @@ const honors = [
     description: "Special Recognition Prize, Explainability Prize, and Code Cleaning Prize as a member of the 'speechCARE' team",
   },
   {
-    icon: Award,
-    title: "Oral Presentation",
-    description: "13th Basic and Clinical Neuroscience Congress, Tehran, 2024",
-  },
-  {
-    icon: Award,
-    title: "Invited Speaker",
-    description: "4th Symposium on AI in Health and Medicine: Parkinson's Disease, Tehran, 2024",
-  },
-  {
     icon: Medal,
     title: "Direct Admission & Full Scholarship",
     description: "M.Sc. in AI and Robotics from University of Tehran (highest-ranked in Iran) and Amirkabir University, 2022",
@@ -57,18 +47,18 @@ const HonorsSection = () => {
         </h2>
         <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full" />
         
-        <div className="grid gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {honors.map((honor, index) => (
             <div 
               key={index}
-              className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border/50 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+              className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border/50 "
             >
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <honor.icon className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">{honor.title}</h3>
-                <p className="text-sm text-muted-foreground">{honor.description}</p>
+                <p className="text-sm leading-relaxed text-muted-foreground">{honor.description}</p>
               </div>
             </div>
           ))}

@@ -1,31 +1,36 @@
-import { Brain, MessageSquare, Mic, Heart, Sparkles } from "lucide-react";
+import { Brain, ShieldCheck, Sparkles, Heart, Mic, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const interests = [
   {
-    icon: MessageSquare,
-    title: "Natural Language Processing",
-    description: "Speech Processing & Language Understanding",
+    icon: ShieldCheck,
+    title: "Trustworthy & Just AI",
+    description: "Decolonized foundation models guided by fairness, bias mitigation, and responsible development.",
   },
   {
     icon: Brain,
-    title: "Large Language Models",
-    description: "Multimodal Speech and Language Models",
-  },
-  {
-    icon: Sparkles,
-    title: "Generative Models",
-    description: "Deep Generative Models & Synthetic Data",
+    title: "Foundation Models",
+    description: "Developing and fine-tuning foundation models and applications for movement analysis and healthcare.",
   },
   {
     icon: Heart,
-    title: "Healthcare AI",
-    description: "Applications in Cognitive Science",
+    title: "Freezing of Gait Assessment",
+    description: "AI-based assessment of freezing of gait (FOG) severity in clinical settings and everyday life.",
   },
   {
     icon: Mic,
     title: "Speech Processing",
-    description: "Audio Analysis & Voice Recognition",
+    description: "AI-based speech processing for Alzheimer's disease and other neurological disorders.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Robustness & Validation",
+    description: "Data collection and curation, pilot testing, and validation to assess technical robustness and transferability.",
+  },
+  {
+    icon: Sparkles,
+    title: "Generative Models",
+    description: "Deep Generative Models and Synthetic Data.",
   },
 ];
 

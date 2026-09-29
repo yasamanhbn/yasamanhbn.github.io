@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -16,7 +16,7 @@
     --popover: 30 40% 99%;
     --popover-foreground: 20 20% 20%;
 
-    --primary: 15 52% 56%; /* Terracotta */
+    --primary: 15 55% 39%; /* Accessible terracotta */
     --primary-foreground: 30 50% 98%;
 
     --secondary: 30 30% 92%; /* Warm beige */
@@ -107,5 +107,16 @@
 
   .gradient-warm {
     background: linear-gradient(180deg, hsl(var(--warm-50)) 0%, hsl(var(--warm-100)) 100%);
+  }
+}
+
+@layer base {
+  section[id] { scroll-margin-top: 6rem; }
+  :focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 4px; }
+  ::selection { background: hsl(var(--peach)); color: hsl(var(--foreground)); }
+  p { line-height: 1.75; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
 }

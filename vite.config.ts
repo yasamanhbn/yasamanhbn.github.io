@@ -19,6 +19,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-git add .
-git commit -m "Fix alias and rebuild"
-git push

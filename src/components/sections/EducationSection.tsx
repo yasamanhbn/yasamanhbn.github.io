@@ -2,9 +2,15 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
+    institution: "KU Leuven",
+    degree: "PhD (ongoing)",
+    period: "September 2026 - Present",
+    project: "Decolonized, just, and trustworthy foundation models for freezing of gait severity assessment",
+  },
+  {
     institution: "University of Tehran",
     degree: "M.Sc., Artificial Intelligence and Robotics",
-    period: "2022–2025",
+    period: "September 2022 – February 2025",
     gpa: "19.29/20 (4.00/4.00)",
     thesis: "Small Dataset Classification with Synthetic Data Generation in Feature Space",
     supervisors: "Prof. Reshad Hosseini and Prof. Hadi Moradi",
@@ -13,16 +19,10 @@ const education = [
     institution: "Amirkabir University of Technology",
     subtitle: "Tehran Polytechnic",
     degree: "B.Sc., Computer Engineering",
-    period: "2018–2022",
+    period: "September 2018 – September 2022",
     gpa: "19.06/20 (4.00/4.00)",
     project: "Driver drowsiness detection using convolutional neural networks",
     supervisors: "Prof. Mohammad Rahmati",
-  },
-  {
-    institution: "Farzanegan4",
-    degree: "High School, Mathematics and Physics",
-    period: "2014–2018",
-    gpa: "High School 19.75/20, Pre-University 19.59/20",
   },
 ];
 
@@ -67,9 +67,11 @@ const EducationSection = () => {
                   </div>
                   
                   <p className="text-foreground mb-2">{edu.degree}</p>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    <span className="font-medium">GPA:</span> {edu.gpa}
-                  </p>
+                  {edu.gpa && (
+                    <p className="text-sm text-muted-foreground mb-3">
+                      <span className="font-medium">GPA:</span> {edu.gpa}
+                    </p>
+                  )}
                   
                   {edu.thesis && (
                     <p className="text-sm text-muted-foreground">
