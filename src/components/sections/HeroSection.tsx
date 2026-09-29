@@ -2,6 +2,7 @@ import { Linkedin, ArrowDown, Mail} from "lucide-react";
 import { SiSemanticscholar, SiGooglescholar, SiGithub} from 'react-icons/si';
 import profileImg from "@/assets/prof.jpeg";
 
+
 const HeroSection = () => {
   const socialLinks = [
     { icon: SiGithub, href: "https://github.com/yasamanhbn", label: "GitHub" },
